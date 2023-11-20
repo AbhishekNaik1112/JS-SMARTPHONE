@@ -177,7 +177,7 @@ IPhone class should extend the SmartPhone class and add two methods to it: displ
 
 - should be a method.
 - should have 1 arguments.
-- the argument name should be mentioned as priceIHave.
+- the argumgit aent name should be mentioned as priceIHave.
 - should calculate the remaining amount the customer has.
 - if the calculated price is less than or equal to zero, return `Customer has no more amount`.
 - else return the remaining amount after buying the android phone.

@@ -59,9 +59,8 @@ class IPhone extends SmartPhone {
   }
 
   remainingAmount(priceIHave) {
-    const initialAmount = this.price;
-    this.price = priceIHave - this.price;
-    return priceIHave < initialAmount
+    this.price =priceIHave-this.price;
+    return priceIHave < this.price
       ? "Customer can't able to buy a phone due to insufficient amount"
       : this.price <= 0
       ? 'Customer has no more amount'
