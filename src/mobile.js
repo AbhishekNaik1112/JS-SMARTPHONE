@@ -60,11 +60,15 @@ class IPhone extends SmartPhone {
 
   remainingAmount(priceIHave) {
     this.price =priceIHave-this.price;
-    return priceIHave < this.price
-      ? "Customer can't able to buy a phone due to insufficient amount"
-      : this.price <= 0
-      ? 'Customer has no more amount'
-      : 'Customer has remaining Rs.' + this.price + ' after buying an iphone';
+    if(this.price<0){
+      return "Customer can't able to buy a phone due to insufficient amount";
+    }
+    else if(this.price==0){
+     return  `Customer has no more amount`;
+    }
+    else{
+      return 'Customer has remaining Rs.'+this.price +' after buying an iphone';
+    }
   }
 }
 
